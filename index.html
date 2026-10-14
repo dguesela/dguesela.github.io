@@ -15,6 +15,23 @@
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
     .research-lead{display:grid;grid-template-columns:1.15fr 1fr;gap:26px;background:linear-gradient(135deg,#fff,#f0f8fb)}.research-lead h3{margin:14px 0 10px;font-size:22px}.research-lead p{margin:0 0 14px}.research-quote{padding:12px 16px;border-left:3px solid #16b8c5;background:#eaf7f9;color:#254d63!important;font-weight:650}.research-aim{background:#fff;border:1px solid #dce5ef;border-radius:12px;padding:18px}.research-aim strong{font-size:15px}.research-aim ul,.progress-grid ul{margin:10px 0 0;padding-left:19px;font-size:13px;color:#52677a}.research-aim li,.progress-grid li{margin:6px 0}.diagram-wrap{overflow-x:auto;margin-top:18px}.architecture-svg{display:block;width:100%;min-width:760px;height:auto}.formula{margin:17px 0 10px;padding:14px 12px;border:1px solid #d4e8ef;background:#f4f9fb;border-radius:10px;font-family:Georgia,serif;font-size:19px;text-align:center;color:#1a506b;overflow-wrap:anywhere}.formula-note{font-size:12px!important;margin-top:12px!important;color:#647789!important}.case-flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:17px}.case-flow span{padding:8px 10px;border-radius:8px;background:#eaf5f8;color:#225c70;font-size:12px;font-weight:700}.case-flow b{color:#0c8296}.evaluation-list{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-top:15px}.evaluation-list span{padding:10px 12px;background:#eff4f8;border:1px solid #dce5ef;border-radius:8px;font-size:12px;font-weight:750;text-align:center}.progress-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.research-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:15px}.resource-placeholder{border:1px dashed #b8cbd9;background:#f6f9fc;padding:12px;border-radius:9px;color:#5b6d7c;font-size:12px}@media(max-width:900px){.research-lead,.progress-grid{grid-template-columns:1fr}}@media(max-width:550px){.research-links{grid-template-columns:1fr}}
+
+     /* SECTION DIVIDER */
+
+.section-divider {display: flex;align-items: center;gap: 20px;margin: 48px 0 36px;}
+
+.section-divider::before,
+.section-divider::after {content: "";flex: 1;height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #94a3b8,
+        transparent
+    );
+}
+
+.section-divider span {color: #17627a;font-size: 0.75rem;font-weight: 700;letter-spacing: 2px;white-space: nowrap;}
+  
   </style>
 </head>
 <body>
@@ -102,56 +119,126 @@
             human–AI collaboration.</p>
 
 
-           <!-- PERSONAL INTERESTS SECTION -->
+                 <!-- SECTION DIVIDER -->
+<div class="section-divider">
+    <span></span>
+</div>
+        
+
+<!-- TECHNOLOGY STACK & PROGRAMMING LANGUAGES -->
+
     <div class="section-heading">
-        <h3>Personal Interests</h3>
+        <h3>Technology Stack & Programming Languages</h3>
         <p>
-            Beyond my professional and academic pursuits, I enjoy
-            staying active, exploring new places, and making time
-            for activities that bring balance and inspiration
-            to my everyday life.
+            My technical background spans full-stack software
+            development, enterprise applications, industrial
+            automation, database systems, and software engineering.
+            I have experience designing, developing, integrating,
+            and maintaining software across research, manufacturing,
+            and highly regulated industrial environments.
         </p>
     </div>
 
-    <div class="personal-interests-grid">
+    <div class="technology-grid">
 
-        <div class="interest-card">
-            <span class="interest-icon">⚽</span>
-            <h3>Playing Soccer</h3>
-            <p>Enjoying the game, teamwork, and friendly competition.</p>
+        <!-- PROGRAMMING LANGUAGES -->
+        <div class="technology-card">
+            <div class="technology-card-heading">
+                <span class="technology-icon">💻</span>
+                <h4>Programming Languages</h4>
+            </div>
+            <div class="technology-tags">
+                <span>C</span>
+                <span>C++</span>
+                <span>C#</span>
+                <span>Java</span>
+                <span>Python</span>
+                <span>FoxPro</span>
+            </div>
         </div>
 
-        <div class="interest-card">
-            <span class="interest-icon">💪</span>
-            <h3>Working Out</h3>
-            <p>Maintaining an active lifestyle through fitness and exercise.</p>
+        <!-- WEB & APPLICATION DEVELOPMENT -->
+        <div class="technology-card">
+            <div class="technology-card-heading">
+                <span class="technology-icon">🌐</span>
+                <h4>Web & Application Development</h4>
+            </div>
+            <div class="technology-tags">
+                <span>ASP.NET</span>
+                <span>.NET</span>
+                <span>ASP.NET MVC</span>
+                <span>RESTful APIs</span>
+                <span>React</span>
+                <span>Web Applications</span>
+            </div>
         </div>
 
-        <div class="interest-card">
-            <span class="interest-icon">🚴</span>
-            <h3>Cycling</h3>
-            <p>Exploring the outdoors and enjoying time on my bike.</p>
+        <!-- DATABASE TECHNOLOGIES -->
+        <div class="technology-card">
+            <div class="technology-card-heading">
+                <span class="technology-icon">🗄️</span>
+                <h4>Database Technologies</h4>
+            </div>
+            <div class="technology-tags">
+                <span>SQL Server</span>
+                <span>Database-Driven Applications</span>
+                <span>Data Integration</span>
+            </div>
         </div>
 
-        <div class="interest-card">
-            <span class="interest-icon">🎬</span>
-            <h3>Watching Movies</h3>
-            <p>Enjoying films, storytelling, and cinematic experiences.</p>
+        <!-- INDUSTRIAL AUTOMATION -->
+        <div class="technology-card">
+            <div class="technology-card-heading">
+                <span class="technology-icon">🏭</span>
+                <h4>Industrial Automation</h4>
+            </div>
+            <div class="technology-tags">
+                <span>SCADA</span>
+                <span>PLC</span>
+                <span>Equipment Automation</span>
+                <span>Production Systems</span>
+                <span>Manufacturing Systems</span>
+            </div>
         </div>
 
-        <div class="interest-card">
-            <span class="interest-icon">🎵</span>
-            <h3>Listening to Music</h3>
-            <p>Appreciating music as a way to relax and recharge.</p>
+        <!-- DEVELOPMENT TOOLS -->
+        <div class="technology-card">
+            <div class="technology-card-heading">
+                <span class="technology-icon">🛠️</span>
+                <h4>Development Tools & Practices</h4>
+            </div>
+            <div class="technology-tags">
+                <span>Azure DevOps</span>
+                <span>Team Foundation Server</span>
+                <span>Source Control</span>
+                <span>Agile / Scrum</span>
+                <span>Continuous Integration</span>
+                <span>Automated Testing</span>
+                <span>Code Reviews</span>
+            </div>
         </div>
 
-        <div class="interest-card">
-            <span class="interest-icon">✈️</span>
-            <h3>Traveling</h3>
-            <p>Discovering new destinations, cultures, and experiences.</p>
+        <!-- SOFTWARE ENGINEERING -->
+        <div class="technology-card">
+            <div class="technology-card-heading">
+                <span class="technology-icon">⚙️</span>
+                <h4>Software Engineering & Architecture</h4>
+            </div>
+            <div class="technology-tags">
+                <span>Software Architecture</span>
+                <span>Requirements Engineering</span>
+                <span>Software Design</span>
+                <span>System Integration</span>
+                <span>Information Security</span>
+                <span>Software Testing</span>
+                <span>Technical Leadership</span>
+            </div>
         </div>
 
     </div>
+
+          
+          
         </article>
       </div>
   </section>
